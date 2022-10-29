@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto redes sociais</title>
    <style>
-     body{
+      body{
+        position: relative;
         background-image: url("pacote-d013/imagens/fundo-madeira.jpg");
         background-attachment: fixed;
-        }
-    
-    iframe{
-        margin-left: calc(40%);
-        margin-right: calc(40%);
-        border: none;
     }
-    </style>
+    
+    iframe#frente{
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 0%);
+        border: none;
+        height: 200px;
+        width: 400px;
+    }
+
+    
+</style>
 </head>
-<body>
-    <iframe src="pacote-d013/imagens/frame-iphone.png" style="height: 650px;" scrolling="no" width="350"></iframe>
+<body id="">
+    <iframe src="pacote-d013/imagens/frame-iphone.png" style="height: 650px;" scrolling="no" width="350px" id="frente">
+    </iframe>
+    
  </body>
 </html>
